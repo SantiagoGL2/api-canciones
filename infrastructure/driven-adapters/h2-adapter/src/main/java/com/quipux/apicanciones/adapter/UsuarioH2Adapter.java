@@ -1,6 +1,6 @@
 package com.quipux.apicanciones.adapter;
 
-import com.quipux.apicanciones.dtos.Usuario;
+import com.quipux.apicanciones.dtos.UsuarioDTO;
 import org.springframework.stereotype.Service;
 import com.quipux.apicanciones.ports.IUsuarioPersistencePort;
 import com.quipux.apicanciones.repository.IUsuarioRepository;
@@ -17,8 +17,8 @@ public class UsuarioH2Adapter implements IUsuarioPersistencePort {
     }
 
     @Override
-    public Optional<Usuario> findByUsername(String username) {
+    public Optional<UsuarioDTO> findByUsername(String username) {
         return iUsuarioRepository.findByUsername(username)
-                .map(entity -> new Usuario(entity.getUsername(), entity.getPassword()));
+                .map(entity -> new UsuarioDTO(entity.getUsername(), entity.getPassword()));
     }
 }

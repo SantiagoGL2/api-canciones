@@ -1,6 +1,6 @@
 package com.quipux.apicanciones.adapter;
 
-import com.quipux.apicanciones.dtos.Usuario;
+import com.quipux.apicanciones.dtos.UsuarioDTO;
 import com.quipux.apicanciones.port.IUsuarioPort;
 import org.springframework.stereotype.Service;
 import com.quipux.apicanciones.ports.IUsuarioPersistencePort;
@@ -17,7 +17,7 @@ public class UsuarioAdapter implements IUsuarioPort {
     }
 
     @Override
-    public Optional<Usuario> findByUsername(String username) {
+    public Optional<UsuarioDTO> findByUsername(String username) {
         return this.usuarioPersistencePort.findByUsername(username);
     }
 }

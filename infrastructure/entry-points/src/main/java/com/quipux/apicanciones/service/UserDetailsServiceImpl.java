@@ -1,6 +1,6 @@
 package com.quipux.apicanciones.service;
 
-import com.quipux.apicanciones.dtos.Usuario;
+import com.quipux.apicanciones.dtos.UsuarioDTO;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -21,7 +21,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Usuario usuario = iUsuarioPort
+        UsuarioDTO usuario = iUsuarioPort
                 .findByUsername(username)
                 .orElseThrow(() -> new UsernameNotFoundException("Usuario no encontrado: " + username));
 
