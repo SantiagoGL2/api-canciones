@@ -5,4 +5,4 @@ CREATE TABLE usuario (
 );
 
 INSERT INTO usuario (id, username, password)
-VALUES (1, 'usuario_demo', '$2a$10$8vIghb7bXvph6aEFtnUyKOVq3OAjMZJP6Qw8Do92Ba1g.Wb7DB83K');
+VALUES (1, 'usuario', '$2a$10$jlUb.yxcOfpZXJxMCGmYyul3vFEHjfNMPstgf/YRadamRk0nqX1Y6');

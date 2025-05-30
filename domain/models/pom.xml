@@ -14,6 +14,5 @@
     <name>domain-models</name>
 
     <dependencies>
-        <!-- Puedes poner aquí dependencias comunes a tus entidades si es necesario -->
     </dependencies>
 </project>
