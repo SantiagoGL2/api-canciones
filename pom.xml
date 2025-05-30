@@ -13,6 +13,14 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>api-canciones</name>
     <description>api-canciones</description>
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>domain/models</module>
+        <module>applications/use-cases</module>
+        <module>infrastructure/driven-adapters/h2-adapter</module>
+        <module>infrastructure/entry-points</module>
+    </modules>
     <url/>
     <licenses>
         <license/>
